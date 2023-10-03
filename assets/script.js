@@ -4,7 +4,7 @@ var timerEl = document.getElementById('countdown');
 var timeLeft = 20;
 
 function countdown() {
-  var timeLeft = 20;
+
 
  
   var timeInterval = setInterval(function () {
@@ -56,15 +56,19 @@ function renderAnswers() {
 }
 
 saveButton.addEventListener("click", function(event) {
+  var userAnswer = document.getElementById("answers1").value 
+  console.log(userAnswer)
   event.preventDefault();
-  saveAnswers();
-  renderAnswers();
+  if (userAnswer != answerArr){
+wrongAnswer();
+  } 
 });
 
- 
+  
 function init() {
 
   renderAnswers();
 }
+
 countdown();
 init();
