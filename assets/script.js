@@ -18,6 +18,9 @@ function countdown() {
     
     },1000)
   }
+  function wrongAnswer(){
+     timeLeft -= 5
+  }
 
 var question1 = document.getElementById("answer1");
 var question2 = document.getElementById("answer2");
