@@ -1,5 +1,5 @@
-var questionArr = ["your moms a hoe", "charlie bit my finger", "crackheads"]
-var answerArr = ["d","eez","nuts"]
+var questionArr = ["What does an image tag look like", "charlie bit my finger", "crackheads"]
+var answerArr = ["d","a","c"]
 var timerEl = document.getElementById('countdown');
 
 function countdown() {
