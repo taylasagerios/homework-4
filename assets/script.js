@@ -1,3 +1,4 @@
+var questionArr = ["your moms a hoe", "charlie bit my finger", "crackheads"]
 var timerEl = document.getElementById('countdown');
 
 function countdown() {
