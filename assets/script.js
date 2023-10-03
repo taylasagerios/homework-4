@@ -1,19 +1,19 @@
 var timerEl = document.getElementById('countdown');
 
 function countdown() {
-  var timeLeft = 5;
+  var timeLeft = 20;
 
  
   var timeInterval = setInterval(function () {
 
-    if (timeLeft > 1) {
+    if (timeLeft > -1) {
 
       timerEl.textContent = timeLeft + ' seconds remaining';
 
       timeLeft--;
     } 
     
-    })
+    },1000)
   }
 
 var question1 = document.getElementById("answer1");
