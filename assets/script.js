@@ -1,4 +1,5 @@
 var timerEl = document.getElementById('countdown');
+
 function countdown() {
   var timeLeft = 5;
 
@@ -34,14 +35,14 @@ function saveAnswers() {
 }
 
 
-function renderLastGrade() {
+function renderAnswers() {
  
-  var lastGrade = JSON.parse(localStorage.getItem(questionsAnswers));
+  var questionsAnswers = JSON.parse(localStorage.getItem(questionsAnswers));
 
-  if (lastGrade !== null) {
-  document.getElementById("saved-question").innerHTML = lastGrade.student;
-  document.getElementById("saved-questions").innerHTML = lastGrade.grade;
-  document.getElementById("saved-comment").innerHTML = lastGrade.comment;
+  if (questionsAnswers !== null) {
+  document.getElementById("saved-question").innerHTML = questionsAnswers.question;
+  document.getElementById("saved-questions").innerHTML = questionsAnswers.questions;
+  document.getElementById("saved-questionss").innerHTML = lquestionsAnswers.questionss;
 
   } else {
     return;
@@ -50,14 +51,14 @@ function renderLastGrade() {
 
 saveButton.addEventListener("click", function(event) {
   event.preventDefault();
-  saveLastGrade();
-  renderLastGrade();
+  saveAnswers();
+  renderAnswers();
 });
 
  
 function init() {
 
-  renderLastGrade();
+  renderAnswers();
 }
 countdown();
 init();
