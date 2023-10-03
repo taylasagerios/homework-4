@@ -1,6 +1,7 @@
 var questionArr = ["What does an image tag look like", "charlie bit my finger", "crackheads"]
 var answerArr = ["d","a","c"]
 var timerEl = document.getElementById('countdown');
+var timeLeft = 20;
 
 function countdown() {
   var timeLeft = 20;
